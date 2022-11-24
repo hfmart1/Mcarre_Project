@@ -63,9 +63,9 @@ def intro():
 
 if __name__ == '__main__':
     ## create sqlalchemy engine for dev
-    engine = create_engine("mysql+pymysql://{user}:{pw}@10.1.15.12:3306/{db}"
-                           .format(user="dev", pw="dev",
-                                   db="m2db")).connect()
+    engine = create_engine("mysql+pymysql://{user}:{pw}@########"/{db}"
+                           .format(user="#############", pw="#########",
+                                   db="############")).connect()
 
     intro()
 
