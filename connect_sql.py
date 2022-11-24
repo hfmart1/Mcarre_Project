@@ -19,9 +19,9 @@ df_soft = pd.read_csv("data_soft.csv")
 ###### EXPORT DF CSV
 
 ## create sqlalchemy engine for dev
-engine = create_engine("mysql+pymysql://{user}:{pw}@10.1.15.12:3306/{db}"  
-                      .format(user="dev", pw="dev", 
-                      db="m2db"))
+engine = create_engine("mysql+pymysql://{user}:{pw}@###########/{db}"  
+                      .format(user="####", pw="####", 
+                      db="####"))
 
 ##Insert whole DataFrame into MySQL
 df_soft.to_sql('listsoft', con = engine, if_exists = 'append', chunksize = 1000, index=False)
@@ -33,8 +33,8 @@ df_soft.to_sql('listsoft', con = engine, if_exists = 'append', chunksize = 1000,
 ########## READ TABLE
 ##
 #### create sqlalchemy engine for dev
-##engine = create_engine("mysql+pymysql://{user}:{pw}@10.1.15.12:3306/{db}"  
-##                      .format(user="dev", pw="dev", 
+##engine = create_engine("mysql+pymysql://{user}:{pw}@########/{db}"  
+##                      .format(user="##########", pw="#########", 
 ##                      db="m2db")).connect()
 ##
 #### table as panda df
